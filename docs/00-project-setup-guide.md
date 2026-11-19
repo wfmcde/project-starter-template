@@ -9,13 +9,16 @@
 - Explore features, edge cases, and calculations conversationally in AI Studio until you have a working prototype.
 - Capture the proven logic, screen flows, and edge cases you uncovered.
 
-## Stage 2: Repository & Folder Scaffolding (AI-Generated)
-- Create a GitHub repository for the production build or starter template (`project-starter-template`).
-- Ask AI to generate the exact directory and starter file commands (`README.md`, `docs/`, `data/`) so you paste and run instead of typing boilerplate by hand.
+## Stage 2: Create the GitHub Repository First
+- Before pushing code or docs, create the repository on GitHub first (for example, `project-starter-template` or your new project repo) so a remote target already exists.
+- Leave initialization options (like an extra README) blank if you are pushing a local starter folder so your initial history stays clean.
 
-## Stage 3: Codify Specs & Sample Data (AI-Built)
-- Have AI translate your prototype's proven rules into structured Markdown specs (`docs/01` through `docs/04`) and baseline test fixtures (`data/`).
+## Stage 3: Run AI-Generated PowerShell Setup & Push to GitHub
+- Ask AI for the exact PowerShell commands to create folders (`docs/`, `data/`, etc.) and write starter files (`README.md`, specs, sample JSON data) so you paste and run instead of typing boilerplate by hand.
+- Initialize Git locally (if new), connect `origin` to your GitHub repository URL, commit your work, and run `git push -u origin main`.
+- Place reference files (such as the walkthrough presentation deck in the root folder) where needed, then commit and push again.
 
-## Stage 4: Production Build & Continuous Guide Updates
-- Feed your structured `docs/` and `data/` files back into AI Studio and VS Code to build the clean production application.
-- Update this process guide and the root presentation deck whenever a new stage or lesson is added.
+## Stage 4: Codify Specs, Build in AI Studio & Update This Guide
+- Translate proven prototype rules into structured Markdown specs (`docs/`) and baseline test fixtures (`data/`).
+- Attach your `docs/` and `data/` files in AI Studio and VS Code to build out the production application.
+- Whenever you add a new stage, fix a workflow snag, or learn a better pattern, update `docs/00-project-setup-guide.md` and refresh the root presentation deck, then commit and push.
